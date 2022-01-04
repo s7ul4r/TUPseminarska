@@ -106,8 +106,8 @@ create table MEDICAL_LEAVE
 create table SALARIES
 (
    EMPLOYE_NUMBER       int not null,
-   FROM_DATE            date not null,
    SALARY               int not null,
+   FROM_DATE            date not null,
    TO_DATE              date,
    FOREIGN KEY (EMPLOYE_NUMBER)  REFERENCES EMPLOYEE (EMPLOYE_NUMBER) ON DELETE CASCADE,
    primary key (EMPLOYE_NUMBER, FROM_DATE)
